@@ -1,10 +1,15 @@
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import styled from 'styled-components';
-const navLink = styled.a`
-  color:red;
-  &:hover{
-    color:red;
-  }
+const NavLink = styled.a`
+color:rgba(17, 24, 39, var(--tw-bg-opacity));
+  margin: 0px 5px 2px 5px;
+ border-bottom-color:rgba(255, 255, 255, .4);
+  border-bottom-width:medium;
+&:hover {
+  color:rgba(30, 58, 138, var(--tw-bg-opacity));
+ border-bottom-color:rgba(30, 58, 138, var(--tw-bg-opacity));
+ border-bottom-width:thin;
+}
 `;
 const Navbar = () => {
   
@@ -17,10 +22,9 @@ const Navbar = () => {
           </a>
         </a>
         <nav className="text-gray-800 md:mr-auto md:ml-4 md:py-1 md:pl-3 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-         <navLink>hello</navLink>
-          <a href="#skills" className="mr-5 hover:text-blue-900">
-            Skills
-          </a>
+         <NavLink href="#projects">My Projects</NavLink>
+          <NavLink href="#skills">Skills</NavLink>
+
           {/* <a href="#testimonials" className="mr-5 hover:text-white">
             Testimonials
           </a> */}

@@ -7,7 +7,7 @@ import Skills from './components/Skills';
 import Testimonials from './components/Testimonials';
 function App() {
   return (
-   <main className='text-gray-400 bg-blue-900 body-font' >
+   <main className='text-gray-400 bg-blue-800 body-font' >
       <Navbar />
       <About />
       <Projects />
